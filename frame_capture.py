@@ -250,7 +250,7 @@ def main():
             pic_time = round_seconds(dusk_time + night_duration * index)
             timed_pics.append((pic_time, pic_path))
     else:
-        pic_duration = timedelta(days=1 / len(pics))
+        pic_duration = timedelta(days=1) / len(pics)
         for index, pic_path in enumerate(pics):
             pic_time = round_seconds(start_time + pic_duration * index)
             timed_pics.append((pic_time, pic_path))
